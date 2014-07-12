@@ -170,7 +170,7 @@ Now you can set up your config file to use your custom merge resolution and diff
 	$ git config --global merge.tool extMerge
 	$ git config --global mergetool.extMerge.cmd \
 	    'extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"'
-	$ git config --global mergetool.trustExitCode false
+	$ git config --global mergetool.extMerge.trustExitCode false
 	$ git config --global diff.external extDiff
 
 or you can edit your `~/.gitconfig` file to add these lines:
